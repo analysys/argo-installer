@@ -17,15 +17,19 @@
     1. 下载小版本升级包 `$ wget http://arkinstall.analysys.cn/upgrade/mi/argomi.n.n.nxxx.tar.gz`
 1. 升级操作需要切换到 argo 用户操作 (`$ su - argo`)
 ## 大版本升级
+#### `$ su - argo` 
 #### 1. 在线升级  
 `$ upgrader -ma`    自动升级到最新版本 n.n.x000
 #### 2. 离线升级  
 `$ upgrader -ma -l argoma.x.x.x.tar.gz`
 ## 小版本升级
+#### `$ su - argo`
 #### 1. 在线升级  
 `$ upgrader -mi`     自动升级到最新版本 n.n.nxxx
 #### 2. 离线升级  
 `$ upgrader -mi -l argomi.x.x.x.tar.gz`  
 ## 一些规则
 1. 日志文件 /tmp/upgrade.log
+## 问题汇总
+1. 由于版本变动原因 部分环境升级4.3.4后存在 redis 启动失败的情况，可以升级到特定小版本 4.3.4001 解决  `$ upgrader -mi -v 4.3.4001` 
 
