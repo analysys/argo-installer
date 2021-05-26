@@ -8,7 +8,7 @@
 ## 安装前服务器检测和配置
 1. 服务器最低配置要求. 一台纯净的服务器，系统：centos7.4|6|7 , CPU:4核8线, 支持 avx 指令集, 内存:16g, 系统盘大于200G, 数据盘 data1大于500G ,且不要使用磁盘分区
 1. 使用 root 用户操作（在/root目录操作）
-1. 下载构建包 `$ wget http://arkinstall.analysys.cn/upgrade/go.tar.gz`
+1. 下载构建包 `$ wget http://repo.analysysdata.com/upgrade/go.tar.gz`
 1. 解压构建包 (解压到当前目录且不要删除 go.tar.gz ) `$ tar zxf go.tar.gz` 
 1. 拷贝配置文件模板到默认目录  `$ cp go/files/scatter/sys.conf /tmp` (如果使用其他路径在后续的命令中用-c /path/sys.conf 参数指定)
 1. 修改配置参数 (IP:内网IP | PORT:ssh 端口 | USER:root | PASSWD:root 用户的密码) `$ vim /tmp/sys.conf`
@@ -23,7 +23,7 @@
      
 ## 开始安装
 1. 切换到 argo 用户 `$ su - argo`
-1. 下载安装包`$ wget http://arkinstall.analysys.cn/argo.4.6.tar.gz`  
+1. 下载安装包`$ wget http://repo.analysysdata.com/argo.4.6.tar.gz`  
 1. 解压`$ tar zxf argo.4.6.tar.gz`  
 1. 复制安装文件 `$ sudo cp argo.4.6/* /opt/soft`
 1. 进入安装目录 `$ cd /opt/soft`
